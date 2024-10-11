@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./stylewr.css"/>
+    </head>
+    <body>
+<form action="#" method="post"></form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" hidden value="Send">
+
+    <style>
+        .pushable {
+          background: hsl(340deg 100% 32%);
+          border-radius: 12px;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          outline-offset: 4px;
+        }
+        .front {
+          display: block;
+          padding: 12px 42px;
+          border-radius: 12px;
+          font-size: 1.25rem;
+          background: hsl(345deg 100% 47%);
+          color: white;
+          transform: translateY(-6px);
+        }
+      
+        .pushable:active .front {
+          transform: translateY(-2px);
+        }
+      </style>
+      
+      <button class="pushable">
+        <span class="front">
+          Push me
+        </span>
+      </button>
+      
+    </body>
+</html>
